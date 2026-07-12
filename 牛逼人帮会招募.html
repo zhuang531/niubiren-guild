@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>牛逼人｜逆水寒手游帮会招募</title>
+  <style>
+    :root { --ink:#10100f; --paper:#efede5; --gold:#c5a15b; --muted:#aaa79e; --line:rgba(197,161,91,.28); }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--paper); background:var(--ink); font-family:"Noto Serif SC","Songti SC",serif; }
+    .hero { min-height:100vh; padding:30px 7vw 56px; display:flex; flex-direction:column; position:relative; overflow:hidden; background:radial-gradient(circle at 74% 42%,#2a2518 0,transparent 25%), linear-gradient(130deg,#11110f,#191713 58%,#0e0e0d); }
+    .hero:before { content:""; position:absolute; inset:20px; border:1px solid var(--line); pointer-events:none; }
+    nav { display:flex; align-items:center; justify-content:space-between; position:relative; z-index:1; font-family:Arial,sans-serif; font-size:12px; letter-spacing:.18em; }
+    .brand { color:var(--gold); font-size:16px; font-weight:bold; letter-spacing:.35em; }
+    nav a { color:var(--paper); text-decoration:none; opacity:.8; }
+    .hero-main { flex:1; display:grid; grid-template-columns:1.1fr .9fr; align-items:center; gap:30px; position:relative; z-index:1; }
+    .eyebrow { color:var(--gold); font:12px Arial,sans-serif; letter-spacing:.35em; margin-bottom:22px; }
+    h1 { font-size:clamp(64px,10vw,152px); line-height:.9; letter-spacing:.08em; margin:0; font-weight:600; }
+    h1 span { color:var(--gold); display:block; font-size:.27em; letter-spacing:.55em; margin:22px 0 0 .2em; }
+    .intro { max-width:420px; color:#cbc8bd; font-size:17px; line-height:2; margin:42px 0 28px; }
+    .button { display:inline-block; color:#191713; background:var(--gold); padding:15px 28px; text-decoration:none; font:700 12px Arial,sans-serif; letter-spacing:.2em; }
+    .crest { justify-self:center; width:min(34vw,420px); aspect-ratio:1; border:1px solid var(--line); border-radius:50%; display:grid; place-items:center; position:relative; }
+    .crest:before,.crest:after { content:""; position:absolute; width:43%; height:33%; border:5px solid var(--gold); border-bottom:0; top:24%; }
+    .crest:before { border-right:0; border-radius:100% 0 0 0; left:17%; transform:rotate(16deg); }
+    .crest:after { border-left:0; border-radius:0 100% 0 0; right:17%; transform:rotate(-16deg); }
+    .crest b { font-size:clamp(54px,8vw,112px); color:var(--gold); letter-spacing:.1em; transform:translateX(.05em); }
+    .scroll { font:11px Arial,sans-serif; letter-spacing:.28em; color:var(--muted); }
+    section { padding:110px 8vw; }
+    .section-label { color:var(--gold); font:11px Arial,sans-serif; letter-spacing:.3em; }
+    h2 { font-size:clamp(36px,5vw,64px); margin:14px 0 48px; letter-spacing:.08em; }
+    .position { background:var(--paper); color:#171611; }
+    .position p { font-size:clamp(23px,3vw,40px); max-width:900px; line-height:1.65; margin:0; }
+    .position strong { color:#9a7738; font-weight:normal; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
+    .card { background:#151512; padding:38px 30px; min-height:220px; }
+    .num { color:var(--gold); font:12px Arial,sans-serif; letter-spacing:.2em; }
+    .card h3 { font-size:26px; letter-spacing:.08em; margin:34px 0 14px; }
+    .card p { color:#bcb9ae; line-height:1.9; margin:0; }
+    .join { text-align:center; background:linear-gradient(145deg,#1d1a13,#0d0d0c); }
+    .join h2 { margin-bottom:20px; }
+    .join p { color:#bbb7aa; line-height:2; }
+    .contact { margin:44px auto 0; display:grid; grid-template-columns:repeat(3,1fr); max-width:900px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .contact div { padding:24px 12px; font-family:Arial,sans-serif; font-size:13px; color:#bbb7aa; }
+    .contact b { display:block; color:var(--gold); font-size:10px; letter-spacing:.18em; margin-bottom:9px; }
+    footer { padding:26px; text-align:center; color:#77746c; font:10px Arial,sans-serif; letter-spacing:.15em; }
+    @media(max-width:700px) { .hero { padding:25px 28px 42px; } .hero:before { inset:12px; } .hero-main { grid-template-columns:1fr; padding:70px 0 35px; } .crest { order:-1; width:210px; } h1 { font-size:68px; } section { padding:72px 28px; } .cards,.contact { grid-template-columns:1fr; } .contact div { border-bottom:1px solid var(--line); } .contact div:last-child { border:0; } nav a { display:none; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <nav><div class="brand">牛逼人</div><a href="#join">加入我们 ↓</a></nav>
+    <div class="hero-main">
+      <div>
+        <div class="eyebrow">逆水寒手游 · 帮会招募</div>
+        <h1>牛逼人<span>BORN TO BE BOLD</span></h1>
+        <p class="intro">在江湖里，我们不追随风声。<br>我们自己，就是风声。<br><br>有热血，有分寸；能并肩，也能独当一面。</p>
+        <a class="button" href="#join">加入牛逼人</a>
+      </div>
+      <div class="crest" aria-label="牛角徽记"><b>牛</b></div>
+    </div>
+    <div class="scroll">SCROLL TO EXPLORE</div>
+  </header>
+  <main>
+    <section class="position">
+      <div class="section-label">OUR CODE · 我们的江湖</div>
+      <h2>不止能打，更要够牛。</h2>
+      <p>「牛逼人」是一个兼顾 <strong>活跃社交、团本开荒、帮会活动与战场 PVP</strong> 的江湖据点。氛围轻松，目标认真；拒绝内耗，讲配合，也讲情义。</p>
+    </section>
+    <section>
+      <div class="section-label">WHO WE SEEK · 寻找同路人</div>
+      <h2>你有自己的锋芒，<br>我们有并肩的地方。</h2>
+      <div class="cards">
+        <article class="card"><div class="num">01 / 稳定</div><h3>常在江湖</h3><p>稳定活跃，愿意参与日常与帮会活动。我们珍惜每一位认真上线的人。</p></article>
+        <article class="card"><div class="num">02 / 默契</div><h3>好好说话</h3><p>尊重队友，沟通友善。不甩锅、不挂机，把胜负交给实力和配合。</p></article>
+        <article class="card"><div class="num">03 / 热爱</div><h3>一直变强</h3><p>团本主力、战场高手与认真成长的萌新，都有自己的位置。</p></article>
+      </div>
+    </section>
+    <section id="join" class="join">
+      <div class="section-label">JOIN US · 入会方式</div>
+      <h2>生而不凡，聚作牛逼人。</h2>
+      <p>江湖路远，幸会一群有意思的人。<br>游戏内搜索帮会，或联系管理加入我们。</p>
+      <div class="contact">
+        <div><b>服务器</b>［填写服务器名称］</div>
+        <div><b>联系管理</b>［填写管理昵称］</div>
+        <div><b>招募群</b>［填写 QQ 群号］</div>
+      </div>
+    </section>
+  </main>
+  <footer>NIU BI REN GUILD · 逆水寒手游</footer>
+</body>
+</html>
